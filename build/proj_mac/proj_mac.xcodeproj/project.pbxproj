@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2307881A9A567C008FC97D /* OceanApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2307861A9A567C008FC97D /* OceanApplication.cpp */; };
+		1B23078B1A9AEF70008FC97D /* TinyAutoParamDataSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2307891A9AEF70008FC97D /* TinyAutoParamDataSource.cpp */; };
+		1B4F26121A7FEAD200DABC42 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F260A1A7FEAD200DABC42 /* Contents.json */; };
+		1B4F26131A7FEAD200DABC42 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F260B1A7FEAD200DABC42 /* Info.plist */; };
+		1B4F26151A7FEAD200DABC42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F260D1A7FEAD200DABC42 /* MainMenu.xib */; };
+		1B77DCFB1AB73F6000A3DDB7 /* TinyGBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B77DCF91AB73F6000A3DDB7 /* TinyGBuffer.cpp */; };
+		1B9FE3F21A965B7A00496A2A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F26091A7FEAD200DABC42 /* AppDelegate.mm */; };
+		1B9FE3F31A965B7A00496A2A /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F260F1A7FEAD200DABC42 /* OpenGLView.mm */; };
+		1B9FE3F41A965B7A00496A2A /* TinyResourceManager_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0D6CE1A958ECB00FC82E7 /* TinyResourceManager_mac.mm */; };
+		1B9FE3F51A965B7A00496A2A /* TinyImage_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0D6D01A95C80200FC82E7 /* TinyImage_mac.mm */; };
+		1B9FE3F61A965B7A00496A2A /* TinyPlatform_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0D6D81A96139F00FC82E7 /* TinyPlatform_mac.mm */; };
+		1B9FE4201A965B8A00496A2A /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760AB1A7F66E4007103F3 /* aabb.c */; };
+		1B9FE4211A965B8A00496A2A /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760AE1A7F66E4007103F3 /* mat4stack.c */; };
+		1B9FE4221A965B8A00496A2A /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760B01A7F66E4007103F3 /* matrix.c */; };
+		1B9FE4231A965B8A00496A2A /* mat3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760B31A7F66E4007103F3 /* mat3.c */; };
+		1B9FE4241A965B8A00496A2A /* mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760B51A7F66E4007103F3 /* mat4.c */; };
+		1B9FE4251A965B8A00496A2A /* plane.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760B71A7F66E4007103F3 /* plane.c */; };
+		1B9FE4261A965B8A00496A2A /* quaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760B91A7F66E4007103F3 /* quaternion.c */; };
+		1B9FE4271A965B8A00496A2A /* ray2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760BB1A7F66E4007103F3 /* ray2.c */; };
+		1B9FE4281A965B8A00496A2A /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760BD1A7F66E4007103F3 /* utility.c */; };
+		1B9FE4291A965B8A00496A2A /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760BF1A7F66E4007103F3 /* vec2.c */; };
+		1B9FE42A1A965B8A00496A2A /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760C11A7F66E4007103F3 /* vec3.c */; };
+		1B9FE42B1A965B8A00496A2A /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B0760C31A7F66E4007103F3 /* vec4.c */; };
+		1B9FE42C1A965B8A00496A2A /* OceanDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE3731A96518700496A2A /* OceanDelegate.cpp */; };
+		1B9FE42D1A965B9900496A2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F260C1A7FEAD200DABC42 /* main.m */; };
+		1B9FE42F1A965BD700496A2A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9FE42E1A965BD700496A2A /* OpenGL.framework */; };
+		1B9FE4311A965BDC00496A2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9FE4301A965BDC00496A2A /* Cocoa.framework */; };
+		1B9FE4871A965D4700496A2A /* TinyCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4321A965D4700496A2A /* TinyCamera.cpp */; };
+		1B9FE4881A965D4700496A2A /* TinyDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4351A965D4700496A2A /* TinyDelegate.cpp */; };
+		1B9FE4891A965D4700496A2A /* TinyEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4371A965D4700496A2A /* TinyEntity.cpp */; };
+		1B9FE48A1A965D4700496A2A /* TinyEntityFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4391A965D4700496A2A /* TinyEntityFactory.cpp */; };
+		1B9FE48B1A965D4700496A2A /* TinyGPUProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE43B1A965D4700496A2A /* TinyGPUProgram.cpp */; };
+		1B9FE48C1A965D4700496A2A /* TinyGPUProgramManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE43D1A965D4700496A2A /* TinyGPUProgramManager.cpp */; };
+		1B9FE48D1A965D4700496A2A /* TinyHardwareBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE43F1A965D4700496A2A /* TinyHardwareBuffer.cpp */; };
+		1B9FE48E1A965D4700496A2A /* TinyImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4411A965D4700496A2A /* TinyImage.cpp */; };
+		1B9FE48F1A965D4700496A2A /* TinyInputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4431A965D4700496A2A /* TinyInputManager.cpp */; };
+		1B9FE4901A965D4700496A2A /* TinyInputObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4451A965D4700496A2A /* TinyInputObject.cpp */; };
+		1B9FE4911A965D4700496A2A /* TinyKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4481A965D4700496A2A /* TinyKeyboard.cpp */; };
+		1B9FE4921A965D4700496A2A /* TinyLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE44A1A965D4700496A2A /* TinyLight.cpp */; };
+		1B9FE4931A965D4700496A2A /* TinyMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE44C1A965D4700496A2A /* TinyMaterial.cpp */; };
+		1B9FE4941A965D4700496A2A /* TinyMaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE44E1A965D4700496A2A /* TinyMaterialManager.cpp */; };
+		1B9FE4951A965D4700496A2A /* TinyMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4501A965D4700496A2A /* TinyMath.cpp */; };
+		1B9FE4961A965D4700496A2A /* TinyMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4531A965D4700496A2A /* TinyMesh.cpp */; };
+		1B9FE4971A965D4700496A2A /* TinyMeshManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4551A965D4700496A2A /* TinyMeshManager.cpp */; };
+		1B9FE4981A965D4700496A2A /* TinyMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4571A965D4700496A2A /* TinyMouse.cpp */; };
+		1B9FE4991A965D4700496A2A /* TinyMovableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4591A965D4700496A2A /* TinyMovableObject.cpp */; };
+		1B9FE49A1A965D4700496A2A /* TinyMovableObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE45B1A965D4700496A2A /* TinyMovableObjectFactory.cpp */; };
+		1B9FE49B1A965D4700496A2A /* TinyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE45D1A965D4700496A2A /* TinyNode.cpp */; };
+		1B9FE49C1A965D4700496A2A /* TinyObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE45F1A965D4700496A2A /* TinyObject.cpp */; };
+		1B9FE49D1A965D4700496A2A /* TinyRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4621A965D4700496A2A /* TinyRenderable.cpp */; };
+		1B9FE49E1A965D4700496A2A /* TinyRenderOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4641A965D4700496A2A /* TinyRenderOperation.cpp */; };
+		1B9FE49F1A965D4700496A2A /* TinyRenderQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4661A965D4700496A2A /* TinyRenderQueue.cpp */; };
+		1B9FE4A01A965D4700496A2A /* TinyRenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4681A965D4700496A2A /* TinyRenderSystem.cpp */; };
+		1B9FE4A11A965D4700496A2A /* TinyRenderTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE46A1A965D4700496A2A /* TinyRenderTarget.cpp */; };
+		1B9FE4A21A965D4700496A2A /* TinyRenderTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE46C1A965D4700496A2A /* TinyRenderTexture.cpp */; };
+		1B9FE4A31A965D4700496A2A /* TinyRenderWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE46E1A965D4700496A2A /* TinyRenderWindow.cpp */; };
+		1B9FE4A41A965D4700496A2A /* TinyResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4701A965D4700496A2A /* TinyResourceManager.cpp */; };
+		1B9FE4A51A965D4700496A2A /* TinyRoot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4721A965D4700496A2A /* TinyRoot.cpp */; };
+		1B9FE4A61A965D4700496A2A /* TinySceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4741A965D4700496A2A /* TinySceneManager.cpp */; };
+		1B9FE4A71A965D4700496A2A /* TinySceneNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4761A965D4700496A2A /* TinySceneNode.cpp */; };
+		1B9FE4A81A965D4700496A2A /* TinySchedulerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4781A965D4700496A2A /* TinySchedulerManager.cpp */; };
+		1B9FE4A91A965D4700496A2A /* TinySubEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE47B1A965D4700496A2A /* TinySubEntity.cpp */; };
+		1B9FE4AA1A965D4700496A2A /* TinySubMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE47D1A965D4700496A2A /* TinySubMesh.cpp */; };
+		1B9FE4AB1A965D4700496A2A /* TinyTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE47F1A965D4700496A2A /* TinyTexture.cpp */; };
+		1B9FE4AC1A965D4700496A2A /* TinyTextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4811A965D4700496A2A /* TinyTextureManager.cpp */; };
+		1B9FE4AD1A965D4700496A2A /* TinyVertexIndexData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4831A965D4700496A2A /* TinyVertexIndexData.cpp */; };
+		1B9FE4AE1A965D4700496A2A /* TinyViewPort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE4851A965D4700496A2A /* TinyViewPort.cpp */; };
+		1BD95DA11AA0749200486035 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD95DA01AA0749200486035 /* assets */; };
+		94A1F1F51EFCAA7800625D70 /* TinySkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94A1F1F31EFCAA7800625D70 /* TinySkeleton.cpp */; };
+		94A1F1F81EFCACB700625D70 /* TinyAnimationState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94A1F1F61EFCACB700625D70 /* TinyAnimationState.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B0760701A7F2626007103F3 /* proj_mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj_mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0760AB1A7F66E4007103F3 /* aabb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aabb.c; sourceTree = "<group>"; };
+		1B0760AC1A7F66E4007103F3 /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
+		1B0760AE1A7F66E4007103F3 /* mat4stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mat4stack.c; sourceTree = "<group>"; };
+		1B0760AF1A7F66E4007103F3 /* mat4stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat4stack.h; sourceTree = "<group>"; };
+		1B0760B01A7F66E4007103F3 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		1B0760B11A7F66E4007103F3 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		1B0760B21A7F66E4007103F3 /* kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kazmath.h; sourceTree = "<group>"; };
+		1B0760B31A7F66E4007103F3 /* mat3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mat3.c; sourceTree = "<group>"; };
+		1B0760B41A7F66E4007103F3 /* mat3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat3.h; sourceTree = "<group>"; };
+		1B0760B51A7F66E4007103F3 /* mat4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mat4.c; sourceTree = "<group>"; };
+		1B0760B61A7F66E4007103F3 /* mat4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat4.h; sourceTree = "<group>"; };
+		1B0760B71A7F66E4007103F3 /* plane.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plane.c; sourceTree = "<group>"; };
+		1B0760B81A7F66E4007103F3 /* plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plane.h; sourceTree = "<group>"; };
+		1B0760B91A7F66E4007103F3 /* quaternion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quaternion.c; sourceTree = "<group>"; };
+		1B0760BA1A7F66E4007103F3 /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quaternion.h; sourceTree = "<group>"; };
+		1B0760BB1A7F66E4007103F3 /* ray2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ray2.c; sourceTree = "<group>"; };
+		1B0760BC1A7F66E4007103F3 /* ray2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ray2.h; sourceTree = "<group>"; };
+		1B0760BD1A7F66E4007103F3 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		1B0760BE1A7F66E4007103F3 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		1B0760BF1A7F66E4007103F3 /* vec2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec2.c; sourceTree = "<group>"; };
+		1B0760C01A7F66E4007103F3 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
+		1B0760C11A7F66E4007103F3 /* vec3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec3.c; sourceTree = "<group>"; };
+		1B0760C21A7F66E4007103F3 /* vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
+		1B0760C31A7F66E4007103F3 /* vec4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec4.c; sourceTree = "<group>"; };
+		1B0760C41A7F66E4007103F3 /* vec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec4.h; sourceTree = "<group>"; };
+		1B142DA51AA3289300AE8395 /* TinyFrameListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyFrameListener.h; sourceTree = "<group>"; };
+		1B142DA71AA410AC00AE8395 /* TinyPrerequisite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyPrerequisite.h; sourceTree = "<group>"; };
+		1B2307861A9A567C008FC97D /* OceanApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OceanApplication.cpp; sourceTree = "<group>"; };
+		1B2307871A9A567C008FC97D /* OceanApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanApplication.h; sourceTree = "<group>"; };
+		1B2307891A9AEF70008FC97D /* TinyAutoParamDataSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyAutoParamDataSource.cpp; sourceTree = "<group>"; };
+		1B23078A1A9AEF70008FC97D /* TinyAutoParamDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyAutoParamDataSource.h; sourceTree = "<group>"; };
+		1B4F26081A7FEAD200DABC42 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		1B4F26091A7FEAD200DABC42 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = SOURCE_ROOT; };
+		1B4F260A1A7FEAD200DABC42 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = SOURCE_ROOT; };
+		1B4F260B1A7FEAD200DABC42 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		1B4F260C1A7FEAD200DABC42 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		1B4F260D1A7FEAD200DABC42 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		1B4F260E1A7FEAD200DABC42 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = SOURCE_ROOT; };
+		1B4F260F1A7FEAD200DABC42 /* OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = SOURCE_ROOT; };
+		1B77DCF91AB73F6000A3DDB7 /* TinyGBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyGBuffer.cpp; sourceTree = "<group>"; };
+		1B77DCFA1AB73F6000A3DDB7 /* TinyGBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGBuffer.h; sourceTree = "<group>"; };
+		1B9FE3731A96518700496A2A /* OceanDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OceanDelegate.cpp; sourceTree = "<group>"; };
+		1B9FE42E1A965BD700496A2A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1B9FE4301A965BDC00496A2A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1B9FE4321A965D4700496A2A /* TinyCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyCamera.cpp; sourceTree = "<group>"; };
+		1B9FE4331A965D4700496A2A /* TinyCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyCamera.h; sourceTree = "<group>"; };
+		1B9FE4341A965D4700496A2A /* TinyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyCommon.h; sourceTree = "<group>"; };
+		1B9FE4351A965D4700496A2A /* TinyDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyDelegate.cpp; sourceTree = "<group>"; };
+		1B9FE4361A965D4700496A2A /* TinyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyDelegate.h; sourceTree = "<group>"; };
+		1B9FE4371A965D4700496A2A /* TinyEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyEntity.cpp; sourceTree = "<group>"; };
+		1B9FE4381A965D4700496A2A /* TinyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyEntity.h; sourceTree = "<group>"; };
+		1B9FE4391A965D4700496A2A /* TinyEntityFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyEntityFactory.cpp; sourceTree = "<group>"; };
+		1B9FE43A1A965D4700496A2A /* TinyEntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyEntityFactory.h; sourceTree = "<group>"; };
+		1B9FE43B1A965D4700496A2A /* TinyGPUProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyGPUProgram.cpp; sourceTree = "<group>"; };
+		1B9FE43C1A965D4700496A2A /* TinyGPUProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGPUProgram.h; sourceTree = "<group>"; };
+		1B9FE43D1A965D4700496A2A /* TinyGPUProgramManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyGPUProgramManager.cpp; sourceTree = "<group>"; };
+		1B9FE43E1A965D4700496A2A /* TinyGPUProgramManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGPUProgramManager.h; sourceTree = "<group>"; };
+		1B9FE43F1A965D4700496A2A /* TinyHardwareBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyHardwareBuffer.cpp; sourceTree = "<group>"; };
+		1B9FE4401A965D4700496A2A /* TinyHardwareBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyHardwareBuffer.h; sourceTree = "<group>"; };
+		1B9FE4411A965D4700496A2A /* TinyImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyImage.cpp; sourceTree = "<group>"; };
+		1B9FE4421A965D4700496A2A /* TinyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyImage.h; sourceTree = "<group>"; };
+		1B9FE4431A965D4700496A2A /* TinyInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyInputManager.cpp; sourceTree = "<group>"; };
+		1B9FE4441A965D4700496A2A /* TinyInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyInputManager.h; sourceTree = "<group>"; };
+		1B9FE4451A965D4700496A2A /* TinyInputObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyInputObject.cpp; sourceTree = "<group>"; };
+		1B9FE4461A965D4700496A2A /* TinyInputObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyInputObject.h; sourceTree = "<group>"; };
+		1B9FE4471A965D4700496A2A /* TinyIteratorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyIteratorWrapper.h; sourceTree = "<group>"; };
+		1B9FE4481A965D4700496A2A /* TinyKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyKeyboard.cpp; sourceTree = "<group>"; };
+		1B9FE4491A965D4700496A2A /* TinyKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyKeyboard.h; sourceTree = "<group>"; };
+		1B9FE44A1A965D4700496A2A /* TinyLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyLight.cpp; sourceTree = "<group>"; };
+		1B9FE44B1A965D4700496A2A /* TinyLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyLight.h; sourceTree = "<group>"; };
+		1B9FE44C1A965D4700496A2A /* TinyMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMaterial.cpp; sourceTree = "<group>"; };
+		1B9FE44D1A965D4700496A2A /* TinyMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMaterial.h; sourceTree = "<group>"; };
+		1B9FE44E1A965D4700496A2A /* TinyMaterialManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMaterialManager.cpp; sourceTree = "<group>"; };
+		1B9FE44F1A965D4700496A2A /* TinyMaterialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMaterialManager.h; sourceTree = "<group>"; };
+		1B9FE4501A965D4700496A2A /* TinyMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMath.cpp; sourceTree = "<group>"; };
+		1B9FE4511A965D4700496A2A /* TinyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMath.h; sourceTree = "<group>"; };
+		1B9FE4521A965D4700496A2A /* TinyMemoryAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMemoryAlloc.h; sourceTree = "<group>"; };
+		1B9FE4531A965D4700496A2A /* TinyMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMesh.cpp; sourceTree = "<group>"; };
+		1B9FE4541A965D4700496A2A /* TinyMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMesh.h; sourceTree = "<group>"; };
+		1B9FE4551A965D4700496A2A /* TinyMeshManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMeshManager.cpp; sourceTree = "<group>"; };
+		1B9FE4561A965D4700496A2A /* TinyMeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMeshManager.h; sourceTree = "<group>"; };
+		1B9FE4571A965D4700496A2A /* TinyMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMouse.cpp; sourceTree = "<group>"; };
+		1B9FE4581A965D4700496A2A /* TinyMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMouse.h; sourceTree = "<group>"; };
+		1B9FE4591A965D4700496A2A /* TinyMovableObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMovableObject.cpp; sourceTree = "<group>"; };
+		1B9FE45A1A965D4700496A2A /* TinyMovableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMovableObject.h; sourceTree = "<group>"; };
+		1B9FE45B1A965D4700496A2A /* TinyMovableObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyMovableObjectFactory.cpp; sourceTree = "<group>"; };
+		1B9FE45C1A965D4700496A2A /* TinyMovableObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyMovableObjectFactory.h; sourceTree = "<group>"; };
+		1B9FE45D1A965D4700496A2A /* TinyNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyNode.cpp; sourceTree = "<group>"; };
+		1B9FE45E1A965D4700496A2A /* TinyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyNode.h; sourceTree = "<group>"; };
+		1B9FE45F1A965D4700496A2A /* TinyObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyObject.cpp; sourceTree = "<group>"; };
+		1B9FE4601A965D4700496A2A /* TinyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyObject.h; sourceTree = "<group>"; };
+		1B9FE4611A965D4700496A2A /* TinyPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyPlatform.h; sourceTree = "<group>"; };
+		1B9FE4621A965D4700496A2A /* TinyRenderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderable.cpp; sourceTree = "<group>"; };
+		1B9FE4631A965D4700496A2A /* TinyRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderable.h; sourceTree = "<group>"; };
+		1B9FE4641A965D4700496A2A /* TinyRenderOperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderOperation.cpp; sourceTree = "<group>"; };
+		1B9FE4651A965D4700496A2A /* TinyRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderOperation.h; sourceTree = "<group>"; };
+		1B9FE4661A965D4700496A2A /* TinyRenderQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderQueue.cpp; sourceTree = "<group>"; };
+		1B9FE4671A965D4700496A2A /* TinyRenderQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderQueue.h; sourceTree = "<group>"; };
+		1B9FE4681A965D4700496A2A /* TinyRenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderSystem.cpp; sourceTree = "<group>"; };
+		1B9FE4691A965D4700496A2A /* TinyRenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderSystem.h; sourceTree = "<group>"; };
+		1B9FE46A1A965D4700496A2A /* TinyRenderTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderTarget.cpp; sourceTree = "<group>"; };
+		1B9FE46B1A965D4700496A2A /* TinyRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderTarget.h; sourceTree = "<group>"; };
+		1B9FE46C1A965D4700496A2A /* TinyRenderTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderTexture.cpp; sourceTree = "<group>"; };
+		1B9FE46D1A965D4700496A2A /* TinyRenderTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderTexture.h; sourceTree = "<group>"; };
+		1B9FE46E1A965D4700496A2A /* TinyRenderWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRenderWindow.cpp; sourceTree = "<group>"; };
+		1B9FE46F1A965D4700496A2A /* TinyRenderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRenderWindow.h; sourceTree = "<group>"; };
+		1B9FE4701A965D4700496A2A /* TinyResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyResourceManager.cpp; sourceTree = "<group>"; };
+		1B9FE4711A965D4700496A2A /* TinyResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyResourceManager.h; sourceTree = "<group>"; };
+		1B9FE4721A965D4700496A2A /* TinyRoot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyRoot.cpp; sourceTree = "<group>"; };
+		1B9FE4731A965D4700496A2A /* TinyRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyRoot.h; sourceTree = "<group>"; };
+		1B9FE4741A965D4700496A2A /* TinySceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySceneManager.cpp; sourceTree = "<group>"; };
+		1B9FE4751A965D4700496A2A /* TinySceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySceneManager.h; sourceTree = "<group>"; };
+		1B9FE4761A965D4700496A2A /* TinySceneNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySceneNode.cpp; sourceTree = "<group>"; };
+		1B9FE4771A965D4700496A2A /* TinySceneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySceneNode.h; sourceTree = "<group>"; };
+		1B9FE4781A965D4700496A2A /* TinySchedulerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySchedulerManager.cpp; sourceTree = "<group>"; };
+		1B9FE4791A965D4700496A2A /* TinySchedulerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySchedulerManager.h; sourceTree = "<group>"; };
+		1B9FE47A1A965D4700496A2A /* TinySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySingleton.h; sourceTree = "<group>"; };
+		1B9FE47B1A965D4700496A2A /* TinySubEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySubEntity.cpp; sourceTree = "<group>"; };
+		1B9FE47C1A965D4700496A2A /* TinySubEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySubEntity.h; sourceTree = "<group>"; };
+		1B9FE47D1A965D4700496A2A /* TinySubMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySubMesh.cpp; sourceTree = "<group>"; };
+		1B9FE47E1A965D4700496A2A /* TinySubMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinySubMesh.h; sourceTree = "<group>"; };
+		1B9FE47F1A965D4700496A2A /* TinyTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyTexture.cpp; sourceTree = "<group>"; };
+		1B9FE4801A965D4700496A2A /* TinyTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyTexture.h; sourceTree = "<group>"; };
+		1B9FE4811A965D4700496A2A /* TinyTextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyTextureManager.cpp; sourceTree = "<group>"; };
+		1B9FE4821A965D4700496A2A /* TinyTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyTextureManager.h; sourceTree = "<group>"; };
+		1B9FE4831A965D4700496A2A /* TinyVertexIndexData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyVertexIndexData.cpp; sourceTree = "<group>"; };
+		1B9FE4841A965D4700496A2A /* TinyVertexIndexData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyVertexIndexData.h; sourceTree = "<group>"; };
+		1B9FE4851A965D4700496A2A /* TinyViewPort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyViewPort.cpp; sourceTree = "<group>"; };
+		1B9FE4861A965D4700496A2A /* TinyViewPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyViewPort.h; sourceTree = "<group>"; };
+		1BC0D6CE1A958ECB00FC82E7 /* TinyResourceManager_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyResourceManager_mac.mm; sourceTree = SOURCE_ROOT; };
+		1BC0D6D01A95C80200FC82E7 /* TinyImage_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyImage_mac.mm; sourceTree = SOURCE_ROOT; };
+		1BC0D6D81A96139F00FC82E7 /* TinyPlatform_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyPlatform_mac.mm; sourceTree = SOURCE_ROOT; };
+		1BD95DA01AA0749200486035 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		94A1F1F21EFCAA5900625D70 /* TinySkeleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinySkeleton.h; sourceTree = "<group>"; };
+		94A1F1F31EFCAA7800625D70 /* TinySkeleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinySkeleton.cpp; sourceTree = "<group>"; };
+		94A1F1F61EFCACB700625D70 /* TinyAnimationState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TinyAnimationState.cpp; sourceTree = "<group>"; };
+		94A1F1F71EFCACB700625D70 /* TinyAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyAnimationState.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B07606D1A7F2626007103F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9FE4311A965BDC00496A2A /* Cocoa.framework in Frameworks */,
+				1B9FE42F1A965BD700496A2A /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B0760671A7F2626007103F3 = {
+			isa = PBXGroup;
+			children = (
+				1B9FE4301A965BDC00496A2A /* Cocoa.framework */,
+				1B9FE42E1A965BD700496A2A /* OpenGL.framework */,
+				1B0760721A7F2626007103F3 /* proj_mac */,
+				1B0760961A7F6641007103F3 /* tiny3d_main */,
+				1B0760A91A7F669F007103F3 /* external */,
+				1B0760E21A7F6F37007103F3 /* samples */,
+				1B0760711A7F2626007103F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B0760711A7F2626007103F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B0760701A7F2626007103F3 /* proj_mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B0760721A7F2626007103F3 /* proj_mac */ = {
+			isa = PBXGroup;
+			children = (
+				1B4F26081A7FEAD200DABC42 /* AppDelegate.h */,
+				1B4F26091A7FEAD200DABC42 /* AppDelegate.mm */,
+				1B4F260A1A7FEAD200DABC42 /* Contents.json */,
+				1B4F260B1A7FEAD200DABC42 /* Info.plist */,
+				1B4F260C1A7FEAD200DABC42 /* main.m */,
+				1B4F260D1A7FEAD200DABC42 /* MainMenu.xib */,
+				1B4F260E1A7FEAD200DABC42 /* OpenGLView.h */,
+				1B4F260F1A7FEAD200DABC42 /* OpenGLView.mm */,
+				1BC0D6CE1A958ECB00FC82E7 /* TinyResourceManager_mac.mm */,
+				1BC0D6D01A95C80200FC82E7 /* TinyImage_mac.mm */,
+				1BC0D6D81A96139F00FC82E7 /* TinyPlatform_mac.mm */,
+			);
+			path = proj_mac;
+			sourceTree = "<group>";
+		};
+		1B0760961A7F6641007103F3 /* tiny3d_main */ = {
+			isa = PBXGroup;
+			children = (
+				1B9FE4321A965D4700496A2A /* TinyCamera.cpp */,
+				1B9FE4331A965D4700496A2A /* TinyCamera.h */,
+				1B9FE4341A965D4700496A2A /* TinyCommon.h */,
+				1B142DA71AA410AC00AE8395 /* TinyPrerequisite.h */,
+				1B2307891A9AEF70008FC97D /* TinyAutoParamDataSource.cpp */,
+				1B23078A1A9AEF70008FC97D /* TinyAutoParamDataSource.h */,
+				1B142DA51AA3289300AE8395 /* TinyFrameListener.h */,
+				1B9FE4351A965D4700496A2A /* TinyDelegate.cpp */,
+				1B9FE4361A965D4700496A2A /* TinyDelegate.h */,
+				1B9FE4371A965D4700496A2A /* TinyEntity.cpp */,
+				1B9FE4381A965D4700496A2A /* TinyEntity.h */,
+				1B9FE4391A965D4700496A2A /* TinyEntityFactory.cpp */,
+				1B9FE43A1A965D4700496A2A /* TinyEntityFactory.h */,
+				1B9FE43B1A965D4700496A2A /* TinyGPUProgram.cpp */,
+				1B9FE43C1A965D4700496A2A /* TinyGPUProgram.h */,
+				1B9FE43D1A965D4700496A2A /* TinyGPUProgramManager.cpp */,
+				1B9FE43E1A965D4700496A2A /* TinyGPUProgramManager.h */,
+				1B9FE43F1A965D4700496A2A /* TinyHardwareBuffer.cpp */,
+				1B9FE4401A965D4700496A2A /* TinyHardwareBuffer.h */,
+				1B9FE4411A965D4700496A2A /* TinyImage.cpp */,
+				1B9FE4421A965D4700496A2A /* TinyImage.h */,
+				1B9FE4431A965D4700496A2A /* TinyInputManager.cpp */,
+				1B9FE4441A965D4700496A2A /* TinyInputManager.h */,
+				1B9FE4451A965D4700496A2A /* TinyInputObject.cpp */,
+				1B9FE4461A965D4700496A2A /* TinyInputObject.h */,
+				1B9FE4471A965D4700496A2A /* TinyIteratorWrapper.h */,
+				1B9FE4481A965D4700496A2A /* TinyKeyboard.cpp */,
+				1B9FE4491A965D4700496A2A /* TinyKeyboard.h */,
+				1B9FE44A1A965D4700496A2A /* TinyLight.cpp */,
+				1B9FE44B1A965D4700496A2A /* TinyLight.h */,
+				1B9FE44C1A965D4700496A2A /* TinyMaterial.cpp */,
+				1B9FE44D1A965D4700496A2A /* TinyMaterial.h */,
+				1B9FE44E1A965D4700496A2A /* TinyMaterialManager.cpp */,
+				1B9FE44F1A965D4700496A2A /* TinyMaterialManager.h */,
+				1B9FE4501A965D4700496A2A /* TinyMath.cpp */,
+				1B9FE4511A965D4700496A2A /* TinyMath.h */,
+				1B9FE4521A965D4700496A2A /* TinyMemoryAlloc.h */,
+				1B9FE4531A965D4700496A2A /* TinyMesh.cpp */,
+				1B9FE4541A965D4700496A2A /* TinyMesh.h */,
+				1B9FE4551A965D4700496A2A /* TinyMeshManager.cpp */,
+				1B9FE4561A965D4700496A2A /* TinyMeshManager.h */,
+				1B9FE4571A965D4700496A2A /* TinyMouse.cpp */,
+				1B9FE4581A965D4700496A2A /* TinyMouse.h */,
+				1B9FE4591A965D4700496A2A /* TinyMovableObject.cpp */,
+				1B9FE45A1A965D4700496A2A /* TinyMovableObject.h */,
+				1B9FE45B1A965D4700496A2A /* TinyMovableObjectFactory.cpp */,
+				1B9FE45C1A965D4700496A2A /* TinyMovableObjectFactory.h */,
+				1B9FE45D1A965D4700496A2A /* TinyNode.cpp */,
+				1B9FE45E1A965D4700496A2A /* TinyNode.h */,
+				1B9FE45F1A965D4700496A2A /* TinyObject.cpp */,
+				1B9FE4601A965D4700496A2A /* TinyObject.h */,
+				1B9FE4611A965D4700496A2A /* TinyPlatform.h */,
+				1B9FE4621A965D4700496A2A /* TinyRenderable.cpp */,
+				1B9FE4631A965D4700496A2A /* TinyRenderable.h */,
+				1B9FE4641A965D4700496A2A /* TinyRenderOperation.cpp */,
+				1B9FE4651A965D4700496A2A /* TinyRenderOperation.h */,
+				1B9FE4661A965D4700496A2A /* TinyRenderQueue.cpp */,
+				1B9FE4671A965D4700496A2A /* TinyRenderQueue.h */,
+				1B9FE4681A965D4700496A2A /* TinyRenderSystem.cpp */,
+				1B9FE4691A965D4700496A2A /* TinyRenderSystem.h */,
+				1B9FE46A1A965D4700496A2A /* TinyRenderTarget.cpp */,
+				1B9FE46B1A965D4700496A2A /* TinyRenderTarget.h */,
+				1B9FE46C1A965D4700496A2A /* TinyRenderTexture.cpp */,
+				1B9FE46D1A965D4700496A2A /* TinyRenderTexture.h */,
+				1B9FE46E1A965D4700496A2A /* TinyRenderWindow.cpp */,
+				1B9FE46F1A965D4700496A2A /* TinyRenderWindow.h */,
+				1B9FE4701A965D4700496A2A /* TinyResourceManager.cpp */,
+				1B9FE4711A965D4700496A2A /* TinyResourceManager.h */,
+				1B9FE4721A965D4700496A2A /* TinyRoot.cpp */,
+				1B9FE4731A965D4700496A2A /* TinyRoot.h */,
+				1B9FE4741A965D4700496A2A /* TinySceneManager.cpp */,
+				1B9FE4751A965D4700496A2A /* TinySceneManager.h */,
+				1B9FE4761A965D4700496A2A /* TinySceneNode.cpp */,
+				1B9FE4771A965D4700496A2A /* TinySceneNode.h */,
+				1B9FE4781A965D4700496A2A /* TinySchedulerManager.cpp */,
+				1B9FE4791A965D4700496A2A /* TinySchedulerManager.h */,
+				1B9FE47A1A965D4700496A2A /* TinySingleton.h */,
+				1B9FE47B1A965D4700496A2A /* TinySubEntity.cpp */,
+				1B9FE47C1A965D4700496A2A /* TinySubEntity.h */,
+				1B9FE47D1A965D4700496A2A /* TinySubMesh.cpp */,
+				1B9FE47E1A965D4700496A2A /* TinySubMesh.h */,
+				1B9FE47F1A965D4700496A2A /* TinyTexture.cpp */,
+				1B9FE4801A965D4700496A2A /* TinyTexture.h */,
+				1B9FE4811A965D4700496A2A /* TinyTextureManager.cpp */,
+				1B9FE4821A965D4700496A2A /* TinyTextureManager.h */,
+				1B9FE4831A965D4700496A2A /* TinyVertexIndexData.cpp */,
+				1B9FE4841A965D4700496A2A /* TinyVertexIndexData.h */,
+				1B9FE4851A965D4700496A2A /* TinyViewPort.cpp */,
+				1B9FE4861A965D4700496A2A /* TinyViewPort.h */,
+				1B77DCF91AB73F6000A3DDB7 /* TinyGBuffer.cpp */,
+				1B77DCFA1AB73F6000A3DDB7 /* TinyGBuffer.h */,
+				94A1F1F21EFCAA5900625D70 /* TinySkeleton.h */,
+				94A1F1F31EFCAA7800625D70 /* TinySkeleton.cpp */,
+				94A1F1F61EFCACB700625D70 /* TinyAnimationState.cpp */,
+				94A1F1F71EFCACB700625D70 /* TinyAnimationState.h */,
+			);
+			name = tiny3d_main;
+			path = ../../tiny3d_main;
+			sourceTree = "<group>";
+		};
+		1B0760A91A7F669F007103F3 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				1B0760AA1A7F66C7007103F3 /* kazmath */,
+			);
+			name = external;
+			path = ../../external;
+			sourceTree = "<group>";
+		};
+		1B0760AA1A7F66C7007103F3 /* kazmath */ = {
+			isa = PBXGroup;
+			children = (
+				1B0760AB1A7F66E4007103F3 /* aabb.c */,
+				1B0760AC1A7F66E4007103F3 /* aabb.h */,
+				1B0760AD1A7F66E4007103F3 /* GL */,
+				1B0760B21A7F66E4007103F3 /* kazmath.h */,
+				1B0760B31A7F66E4007103F3 /* mat3.c */,
+				1B0760B41A7F66E4007103F3 /* mat3.h */,
+				1B0760B51A7F66E4007103F3 /* mat4.c */,
+				1B0760B61A7F66E4007103F3 /* mat4.h */,
+				1B0760B71A7F66E4007103F3 /* plane.c */,
+				1B0760B81A7F66E4007103F3 /* plane.h */,
+				1B0760B91A7F66E4007103F3 /* quaternion.c */,
+				1B0760BA1A7F66E4007103F3 /* quaternion.h */,
+				1B0760BB1A7F66E4007103F3 /* ray2.c */,
+				1B0760BC1A7F66E4007103F3 /* ray2.h */,
+				1B0760BD1A7F66E4007103F3 /* utility.c */,
+				1B0760BE1A7F66E4007103F3 /* utility.h */,
+				1B0760BF1A7F66E4007103F3 /* vec2.c */,
+				1B0760C01A7F66E4007103F3 /* vec2.h */,
+				1B0760C11A7F66E4007103F3 /* vec3.c */,
+				1B0760C21A7F66E4007103F3 /* vec3.h */,
+				1B0760C31A7F66E4007103F3 /* vec4.c */,
+				1B0760C41A7F66E4007103F3 /* vec4.h */,
+			);
+			path = kazmath;
+			sourceTree = "<group>";
+		};
+		1B0760AD1A7F66E4007103F3 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				1B0760AE1A7F66E4007103F3 /* mat4stack.c */,
+				1B0760AF1A7F66E4007103F3 /* mat4stack.h */,
+				1B0760B01A7F66E4007103F3 /* matrix.c */,
+				1B0760B11A7F66E4007103F3 /* matrix.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		1B0760E21A7F6F37007103F3 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				1B0760E41A7F719E007103F3 /* sample_model */,
+			);
+			name = samples;
+			path = ../../sample;
+			sourceTree = "<group>";
+		};
+		1B0760E41A7F719E007103F3 /* sample_model */ = {
+			isa = PBXGroup;
+			children = (
+				1BD95DA01AA0749200486035 /* assets */,
+				1B9FE3731A96518700496A2A /* OceanDelegate.cpp */,
+				1B2307861A9A567C008FC97D /* OceanApplication.cpp */,
+				1B2307871A9A567C008FC97D /* OceanApplication.h */,
+			);
+			name = sample_model;
+			path = sample_ocean;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B07606F1A7F2626007103F3 /* proj_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B07608D1A7F2626007103F3 /* Build configuration list for PBXNativeTarget "proj_mac" */;
+			buildPhases = (
+				1B07606C1A7F2626007103F3 /* Sources */,
+				1B07606D1A7F2626007103F3 /* Frameworks */,
+				1B07606E1A7F2626007103F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = proj_mac;
+			productName = proj_mac;
+			productReference = 1B0760701A7F2626007103F3 /* proj_mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B0760681A7F2626007103F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "reuben chao";
+				TargetAttributes = {
+					1B07606F1A7F2626007103F3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1B07606B1A7F2626007103F3 /* Build configuration list for PBXProject "proj_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B0760671A7F2626007103F3;
+			productRefGroup = 1B0760711A7F2626007103F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B07606F1A7F2626007103F3 /* proj_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B07606E1A7F2626007103F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B4F26131A7FEAD200DABC42 /* Info.plist in Resources */,
+				1BD95DA11AA0749200486035 /* assets in Resources */,
+				1B4F26121A7FEAD200DABC42 /* Contents.json in Resources */,
+				1B4F26151A7FEAD200DABC42 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B07606C1A7F2626007103F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9FE4A91A965D4700496A2A /* TinySubEntity.cpp in Sources */,
+				1B9FE48B1A965D4700496A2A /* TinyGPUProgram.cpp in Sources */,
+				1B9FE4901A965D4700496A2A /* TinyInputObject.cpp in Sources */,
+				1B9FE42D1A965B9900496A2A /* main.m in Sources */,
+				1B9FE4AD1A965D4700496A2A /* TinyVertexIndexData.cpp in Sources */,
+				1B9FE4201A965B8A00496A2A /* aabb.c in Sources */,
+				1B9FE4211A965B8A00496A2A /* mat4stack.c in Sources */,
+				1B9FE4221A965B8A00496A2A /* matrix.c in Sources */,
+				1B9FE49A1A965D4700496A2A /* TinyMovableObjectFactory.cpp in Sources */,
+				1B9FE4971A965D4700496A2A /* TinyMeshManager.cpp in Sources */,
+				1B9FE48E1A965D4700496A2A /* TinyImage.cpp in Sources */,
+				1B23078B1A9AEF70008FC97D /* TinyAutoParamDataSource.cpp in Sources */,
+				94A1F1F81EFCACB700625D70 /* TinyAnimationState.cpp in Sources */,
+				1B9FE4231A965B8A00496A2A /* mat3.c in Sources */,
+				1B9FE4991A965D4700496A2A /* TinyMovableObject.cpp in Sources */,
+				1B9FE4981A965D4700496A2A /* TinyMouse.cpp in Sources */,
+				1B9FE4241A965B8A00496A2A /* mat4.c in Sources */,
+				1B9FE4A41A965D4700496A2A /* TinyResourceManager.cpp in Sources */,
+				1B9FE49E1A965D4700496A2A /* TinyRenderOperation.cpp in Sources */,
+				1B9FE48D1A965D4700496A2A /* TinyHardwareBuffer.cpp in Sources */,
+				94A1F1F51EFCAA7800625D70 /* TinySkeleton.cpp in Sources */,
+				1B9FE4961A965D4700496A2A /* TinyMesh.cpp in Sources */,
+				1B9FE4AB1A965D4700496A2A /* TinyTexture.cpp in Sources */,
+				1B9FE4251A965B8A00496A2A /* plane.c in Sources */,
+				1B9FE48A1A965D4700496A2A /* TinyEntityFactory.cpp in Sources */,
+				1B9FE48F1A965D4700496A2A /* TinyInputManager.cpp in Sources */,
+				1B2307881A9A567C008FC97D /* OceanApplication.cpp in Sources */,
+				1B9FE4261A965B8A00496A2A /* quaternion.c in Sources */,
+				1B9FE4AC1A965D4700496A2A /* TinyTextureManager.cpp in Sources */,
+				1B9FE4951A965D4700496A2A /* TinyMath.cpp in Sources */,
+				1B9FE49C1A965D4700496A2A /* TinyObject.cpp in Sources */,
+				1B9FE4A01A965D4700496A2A /* TinyRenderSystem.cpp in Sources */,
+				1B9FE4941A965D4700496A2A /* TinyMaterialManager.cpp in Sources */,
+				1B9FE4271A965B8A00496A2A /* ray2.c in Sources */,
+				1B9FE4281A965B8A00496A2A /* utility.c in Sources */,
+				1B9FE4291A965B8A00496A2A /* vec2.c in Sources */,
+				1B9FE4A21A965D4700496A2A /* TinyRenderTexture.cpp in Sources */,
+				1B9FE42A1A965B8A00496A2A /* vec3.c in Sources */,
+				1B9FE4881A965D4700496A2A /* TinyDelegate.cpp in Sources */,
+				1B9FE42B1A965B8A00496A2A /* vec4.c in Sources */,
+				1B9FE4911A965D4700496A2A /* TinyKeyboard.cpp in Sources */,
+				1B9FE4AE1A965D4700496A2A /* TinyViewPort.cpp in Sources */,
+				1B9FE4A51A965D4700496A2A /* TinyRoot.cpp in Sources */,
+				1B9FE4931A965D4700496A2A /* TinyMaterial.cpp in Sources */,
+				1B9FE49F1A965D4700496A2A /* TinyRenderQueue.cpp in Sources */,
+				1B9FE42C1A965B8A00496A2A /* OceanDelegate.cpp in Sources */,
+				1B9FE48C1A965D4700496A2A /* TinyGPUProgramManager.cpp in Sources */,
+				1B9FE4A31A965D4700496A2A /* TinyRenderWindow.cpp in Sources */,
+				1B9FE3F21A965B7A00496A2A /* AppDelegate.mm in Sources */,
+				1B9FE4871A965D4700496A2A /* TinyCamera.cpp in Sources */,
+				1B9FE4A71A965D4700496A2A /* TinySceneNode.cpp in Sources */,
+				1B9FE4AA1A965D4700496A2A /* TinySubMesh.cpp in Sources */,
+				1B9FE49B1A965D4700496A2A /* TinyNode.cpp in Sources */,
+				1B9FE4891A965D4700496A2A /* TinyEntity.cpp in Sources */,
+				1B9FE49D1A965D4700496A2A /* TinyRenderable.cpp in Sources */,
+				1B9FE4921A965D4700496A2A /* TinyLight.cpp in Sources */,
+				1B9FE4A11A965D4700496A2A /* TinyRenderTarget.cpp in Sources */,
+				1B9FE4A81A965D4700496A2A /* TinySchedulerManager.cpp in Sources */,
+				1B9FE4A61A965D4700496A2A /* TinySceneManager.cpp in Sources */,
+				1B77DCFB1AB73F6000A3DDB7 /* TinyGBuffer.cpp in Sources */,
+				1B9FE3F31A965B7A00496A2A /* OpenGLView.mm in Sources */,
+				1B9FE3F41A965B7A00496A2A /* TinyResourceManager_mac.mm in Sources */,
+				1B9FE3F51A965B7A00496A2A /* TinyImage_mac.mm in Sources */,
+				1B9FE3F61A965B7A00496A2A /* TinyPlatform_mac.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B07608B1A7F2626007103F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1B07608C1A7F2626007103F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1B07608E1A7F2626007103F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../tiny3d_main",
+					"$(PROJECT_DIR)/../../external",
+					"$(PROJECT_DIR)/../../sample",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B07608F1A7F2626007103F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../tiny3d_main",
+					"$(PROJECT_DIR)/../../external",
+					"$(PROJECT_DIR)/../../sample",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B07606B1A7F2626007103F3 /* Build configuration list for PBXProject "proj_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B07608B1A7F2626007103F3 /* Debug */,
+				1B07608C1A7F2626007103F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B07608D1A7F2626007103F3 /* Build configuration list for PBXNativeTarget "proj_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B07608E1A7F2626007103F3 /* Debug */,
+				1B07608F1A7F2626007103F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B0760681A7F2626007103F3 /* Project object */;
+}
